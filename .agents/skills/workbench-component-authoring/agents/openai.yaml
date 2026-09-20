@@ -1,0 +1,3 @@
+interface:
+  display_name: "Workbench Component Authoring"
+  short_description: "Guard Workbench component contracts"

@@ -1,0 +1,4 @@
+@theme inline {
+  --color-color-background-body: var(--color-background-body);
+  --color-color-track: var(--color-track);
+}

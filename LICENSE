@@ -1,0 +1,125 @@
+Workbench Source Available License 1.0
+
+Copyright (c) 2026 momtoom
+
+This is a custom source-available license. It is not the MIT License and is
+not an Open Source Initiative-approved open source license.
+
+1. Scope
+
+"Software" means the Workbench source code, binaries, and accompanying
+documentation offered under this license, including modifications and
+derivative works. "Licensor" means the copyright holder offering the
+Software under these terms. This license grants only rights the Licensor
+is entitled to grant.
+
+Third-party materials and earlier MIT-licensed versions are addressed in
+sections 6 and 7. They are not relicensed by this document.
+
+2. Permitted use
+
+Subject to the conditions below, the Licensor grants you a worldwide,
+non-exclusive, royalty-free copyright license to use, run, study, copy,
+and modify the Software, and to distribute it without charge.
+
+Permitted uses include personal projects, education, research, and internal
+business use by companies and other organizations, including internal
+self-hosting. Employees and contractors may use an internal installation
+on behalf of that organization for its internal work.
+
+You may use the Software as a tool to perform paid design or development
+work and to create commercial websites, applications, and other outputs,
+subject to section 4.
+
+You may share the Software's source code, including modifications, without
+charge for collaboration, study, or permitted use, including through public
+repository forks. This does not permit offering a competing product or
+service under section 3.
+
+3. Restrictions
+
+Without a separate written license from the Licensor, you may not:
+
+(a) Sell, resell, rent, commercially sublicense, or otherwise charge others
+    for copies of, distribution of, or access to the Software, whether
+    modified or unmodified. This includes paid hosting and bundling the
+    Software with a paid offering to charge indirectly for the Software.
+
+(b) Use, incorporate, modify, or distribute the Software to provide to
+    third parties a product or service that competes with Workbench. A
+    competing offering is one that provides Workbench's visual source-code
+    authoring or editing functionality as a substitute for Workbench.
+    This restriction applies to paid and free offerings, including hosted
+    services, rebranded versions, plugins, and products based on modified
+    or ported versions of the Software.
+
+Internal use under section 2 is not, by itself, providing a competing
+offering to third parties. Charging for work performed using the Software
+or for outputs permitted under section 4 is not charging for the Software.
+Merely using similar ideas in independently developed software that does
+not use protected material from the Software is not restricted by this
+license.
+
+4. Outputs and project materials
+
+The Licensor claims no ownership of your designs, documents, websites,
+applications, or source code merely because you created or edited them
+with the Software. Such outputs do not become subject to this license
+solely because you used the Software. You may use and sell your outputs,
+subject to rights in any third-party material they contain.
+
+For Licensor-owned project scaffolding, example UI components, and templates
+supplied specifically for incorporation into user projects, you may use,
+modify, distribute, sublicense, and sell those materials as part of your
+outputs, provided the outputs do not offer the Software or a competing
+product or service under section 3. Preserve applicable copyright and
+third-party license notices. This exception does not cover the Workbench
+editor, its editing engine, or its authoring interfaces merely because
+they have been copied into a user project.
+
+5. Notices and redistribution
+
+Except for the project-material permission in section 4 and separately
+licensed third-party materials, every copy or substantial portion of the
+Software you distribute must include this license and its copyright
+notices. You must identify your modifications and must not represent a
+modified version as an official Workbench release.
+
+You may not remove these restrictions or grant recipients broader rights
+to the Software than this license permits. Recipients receive permission
+from the Licensor under these same terms. No trademark rights or right to
+claim endorsement by the Licensor are granted.
+
+6. Third-party materials
+
+Third-party components, fonts, icons, and other materials retain their own
+licenses. This license does not replace or restrict rights granted under
+those licenses. See THIRD_PARTY_NOTICES.md,
+THIRD_PARTY_NODE_MODULE_NOTICES.md, THIRD_PARTY_RUNTIME_NOTICES.md, and any
+notices accompanying the relevant files.
+
+7. Earlier MIT releases
+
+This license applies to releases distributed with this license beginning
+with the commit that introduces it. Earlier versions published under the
+MIT License remain available under their original MIT terms. This change
+does not revoke or retroactively restrict rights granted under MIT for
+those versions or for code obtained under that license.
+
+8. Termination and other rights
+
+Your rights under this license terminate automatically if you violate its
+conditions. Rights granted independently under third-party licenses or
+earlier MIT releases are not terminated by this provision. Rights that
+applicable law permits without a license are not restricted. The Licensor
+may separately authorize uses not permitted here in writing.
+
+9. Disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.

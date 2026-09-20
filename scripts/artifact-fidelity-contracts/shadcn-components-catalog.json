@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "id": "shadcn-components-catalog",
+  "status": "approved",
+  "canonicalArtifact": {
+    "kind": "source-structure",
+    "label": "Workbench shadcn components catalog starter artifact",
+    "sourceFile": "scripts/workbench-starter/shadcn-base/src/workbench-pages/ComponentsCatalog.tsx",
+    "sha256": "3b4078d08797bb15ba2c139321104be789327d1ac70fb0980abcf9ea222b38d5"
+  },
+  "artifactManifest": {
+    "sourcePrecedence": "starter source structure is canonical; visual screenshots may clarify appearance but must not justify replacing registered component structure",
+    "pageBoundary": "one shadcn-base starter page at scripts/workbench-starter/shadcn-base/src/workbench-pages/ComponentsCatalog.tsx",
+    "orderedTracks": [
+      "foundations",
+      "actions and commands",
+      "form inputs",
+      "wayfinding",
+      "overlays",
+      "content and data",
+      "status and feedback",
+      "conversation",
+      "shell and structure"
+    ],
+    "repeatedItemCounts": {
+      "sections": 9,
+      "componentFamilies": 66,
+      "Button": 63,
+      "Icon": 56
+    },
+    "assets": [],
+    "typographyThemeClasses": [
+      "font-heading",
+      "font-mono",
+      "bg-background",
+      "text-foreground",
+      "text-muted-foreground"
+    ],
+    "interactiveStates": [
+      "form controls",
+      "menus and popovers",
+      "dialogs, sheets, and drawers",
+      "carousels and scroll areas",
+      "message scroller jump controls",
+      "resizable and collapsible sidebar surfaces"
+    ]
+  },
+  "targets": [
+    {
+      "sourceFile": "scripts/workbench-starter/shadcn-base/src/workbench-pages/ComponentsCatalog.tsx",
+      "sha256": "3b4078d08797bb15ba2c139321104be789327d1ac70fb0980abcf9ea222b38d5",
+      "jsxElementCounts": {
+        "Theme": 5,
+        "Toaster": 1,
+        "section": 9,
+        "article": 66,
+        "h3": 66,
+        "Button": 63,
+        "Icon": 59,
+        "Calendar": 2,
+        "MessageScroller": 3,
+        "SidebarProvider": 1
+      },
+      "forbiddenJsxElements": [
+        "i"
+      ],
+      "requiredImports": [
+        {
+          "from": "../components/ui/button",
+          "names": ["Button"]
+        },
+        {
+          "from": "../components/ui/dialog",
+          "names": ["Dialog", "DialogAction", "DialogCancel", "DialogContent", "DialogTrigger"]
+        },
+        {
+          "from": "../components/ui/message-scroller",
+          "names": ["MessageScroller", "MessageScrollerButton", "MessageScrollerViewport"]
+        },
+        {
+          "from": "../components/ui/sidebar",
+          "names": ["Sidebar", "SidebarInset", "SidebarProvider"]
+        },
+        {
+          "from": "../components/ui/theme",
+          "names": ["Theme"]
+        }
+      ],
+      "requiredSourceText": [
+        "SHADCN-002 — Component Ledger",
+        "66 families · 09 sections",
+        "<article id=\"cl-theme\" data-family=\"theme\">",
+        "<article id=\"cl-input-group\" data-family=\"input-group\">",
+        "<article id=\"cl-dialog\" data-family=\"dialog\">",
+        "<article id=\"cl-message-scroller\" data-family=\"message-scroller\">",
+        "<article id=\"cl-sidebar\" data-family=\"sidebar\">",
+        "<MessageScroller defaultScrollPosition=\"start\" className=\"h-full\">",
+        "<div className=\"grid min-w-0 gap-4 lg:grid-cols-3\">",
+        "<Card className=\"relative h-[35rem] min-w-0 gap-0 overflow-hidden py-0\">",
+        "<Card className=\"h-[35rem] min-w-0 gap-0 overflow-hidden py-0\">",
+        "<MessageScrollerItem animation=\"spring-bounce\" messageId=\"stream-follow-up\" scrollAnchor>",
+        "messageId=\"stream-ready\"",
+        "messageId=\"group-next-step\"",
+        "messageId=\"group-status\"",
+        "bottom-0 z-10 h-12 bg-[linear-gradient(to_bottom,transparent_0%,var(--card)_100%)]",
+        "border-t-0 bg-transparent p-4 pt-0",
+        "<DropdownMenuTrigger aria-label=\"Add files\" className=\"rounded-full\" render={<InputGroupButton className=\"rounded-full\" size=\"icon-sm\" type=\"button\" variant=\"outline\" />} size=\"icon-sm\" variant=\"outline\">",
+        "<DropdownMenuItem><Icon name=\"paperclip\" />Add photos &amp; files</DropdownMenuItem>",
+        "<MessageScrollerButton direction=\"start\" variant=\"outline\" />",
+        "<MessageScrollerContent className=\"gap-6 pb-16\">",
+        "<MessageScrollerButton className=\"data-[direction=end]:bottom-6\" direction=\"end\" />",
+        "Some examples on this page are adapted from the",
+        "https://ui.shadcn.com/docs/components/base/message-scroller",
+        "<SidebarProvider contained",
+        "<Toaster />"
+      ],
+      "forbiddenSourceText": [
+        ".map(",
+        "style={{",
+        "src=\"/workbench-assets/icons/ledger-connect-qr.svg\"",
+        "from 'lucide-react'",
+        "from 'recharts'"
+      ]
+    },
+    {
+      "sourceFile": "scripts/workbench-starter/shadcn-base/src/components/ui/input-group.tsx",
+      "sha256": "0c96be5c7f45713cc5cdb43fc5760cbf58152e75939d84da58f4846f95c3a014",
+      "requiredSourceText": [
+        "data-slot=\"input-group-button\"",
+        "readOnly?: boolean",
+        "showClearButton?: boolean"
+      ]
+    }
+  ]
+}

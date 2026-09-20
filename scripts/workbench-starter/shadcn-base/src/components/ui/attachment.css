@@ -1,0 +1,47 @@
+@keyframes attachment-title-shimmer {
+  0%,
+  12% {
+    background-position: 100% 50%;
+  }
+  83%,
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+:where([data-slot="attachment"][data-state="uploading"] [data-slot="attachment-title"]),
+:where([data-slot="attachment"][data-state="processing"] [data-slot="attachment-title"]) {
+  --attachment-title-shimmer-duration: calc(
+    var(--duration-1000, var(--ds-token-tailwind-primitives-duration-1000, 1000ms)) +
+    var(--duration-700, var(--ds-token-tailwind-primitives-duration-700, 700ms))
+  );
+  --attachment-title-shimmer-interval: var(
+    --duration-700,
+    var(--ds-token-tailwind-primitives-duration-700, 700ms)
+  );
+  --attachment-title-shimmer-cycle: calc(
+    var(--attachment-title-shimmer-duration) +
+    var(--attachment-title-shimmer-interval)
+  );
+  --attachment-title-shimmer-easing: var(
+    --ease-linear,
+    var(--ds-token-tailwind-primitives-ease-linear, linear)
+  );
+
+  animation: attachment-title-shimmer var(--attachment-title-shimmer-cycle) var(--attachment-title-shimmer-easing) infinite;
+  background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    var(--foreground) 0%,
+    var(--foreground) 36%,
+    var(--muted-foreground) 46%,
+    var(--muted-foreground) 54%,
+    var(--foreground) 64%,
+    var(--foreground) 100%
+  );
+  background-size: 320% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  will-change: background-position;
+}

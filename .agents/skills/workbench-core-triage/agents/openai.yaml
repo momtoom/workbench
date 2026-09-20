@@ -1,0 +1,3 @@
+interface:
+  display_name: "Workbench Core Triage"
+  short_description: "Triage Workbench core bugs"

@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "id": "shadcn-saas-dashboard",
+  "status": "approved",
+  "canonicalArtifact": {
+    "kind": "source-structure",
+    "label": "Workbench shadcn interactive SaaS dashboard starter artifact",
+    "sourceFile": "scripts/workbench-starter/shadcn-base/src/workbench-pages/SaasDashboard.tsx",
+    "sha256": "52a5a38757d3b0cd41b420859ae0ef19c673a3fb63125a0b507d1f65e8ff951c"
+  },
+  "artifactManifest": {
+    "sourcePrecedence": "starter source structure is canonical; preserve the explicit source-backed dashboard regions and registered component boundaries",
+    "pageBoundary": "one shadcn-base starter page at scripts/workbench-starter/shadcn-base/src/workbench-pages/SaasDashboard.tsx",
+    "orderedTracks": [
+      "dark product sidebar and utility header",
+      "primary revenue command deck and live operating pulse",
+      "key metric strip",
+      "revenue velocity and activation sprint",
+      "customer movement and closing position",
+      "acquisition efficiency and renewal runway",
+      "team activity and weekly finish line"
+    ],
+    "repeatedItemCounts": {
+      "metric": 4,
+      "operatingPulse": 3,
+      "activity": 4,
+      "customerHealth": 4,
+      "renewal": 4,
+      "weeklyPlan": 4
+    },
+    "assets": [],
+    "typographyThemeClasses": [
+      "font-heading",
+      "text-muted-foreground",
+      "bg-primary",
+      "bg-foreground",
+      "bg-amber-100",
+      "bg-violet-100"
+    ],
+    "interactiveStates": [
+      "sidebar navigation buttons",
+      "workspace synchronization status popover",
+      "new report drawer",
+      "reporting period select",
+      "pipeline actions menu",
+      "customer success and renewal actions"
+    ]
+  },
+  "targets": [
+    {
+      "sourceFile": "scripts/workbench-starter/shadcn-base/src/workbench-pages/SaasDashboard.tsx",
+      "sha256": "52a5a38757d3b0cd41b420859ae0ef19c673a3fb63125a0b507d1f65e8ff951c",
+      "requiredImports": [
+        {
+          "from": "../components/ui/chart-patterns",
+          "names": ["AreaChartCard", "BarChartCard"]
+        },
+        {
+          "from": "../components/ui/card",
+          "names": ["Card", "CardAction", "CardContent", "CardDescription", "CardHeader", "CardTitle"]
+        },
+        {
+          "from": "../components/ui/icon",
+          "names": ["Icon"]
+        },
+        {
+          "from": "../components/ui/drawer",
+          "names": ["Drawer", "DrawerClose", "DrawerContent", "DrawerDescription", "DrawerFooter", "DrawerHeader", "DrawerTitle", "DrawerTrigger"]
+        },
+        {
+          "from": "../components/ui/item",
+          "names": ["Item", "ItemActions", "ItemContent", "ItemDescription", "ItemGroup", "ItemMedia", "ItemTitle"]
+        },
+        {
+          "from": "../components/ui/progress",
+          "names": ["Progress", "ProgressLabel", "ProgressValue"]
+        },
+        {
+          "from": "../components/ui/popover",
+          "names": ["Popover", "PopoverContent", "PopoverDescription", "PopoverHeader", "PopoverTitle", "PopoverTrigger"]
+        },
+        {
+          "from": "../components/ui/select",
+          "names": ["Select", "SelectContent", "SelectGroup", "SelectItem", "SelectLabel", "SelectTrigger", "SelectValue"]
+        },
+        {
+          "from": "../components/ui/sidebar",
+          "names": ["Sidebar", "SidebarContent", "SidebarInset", "SidebarMenu", "SidebarMenuButton", "SidebarProvider"]
+        },
+        {
+          "from": "../components/ui/theme",
+          "names": ["Theme"]
+        }
+      ],
+      "requiredSourceText": [
+        "aria-label=\"Pulseboard SaaS dashboard\"",
+        "aria-label=\"Key metrics\"",
+        "<SidebarProvider",
+        "max-w-[1320px]",
+        "grid-cols-12",
+        "aria-label=\"Morning command deck\"",
+        "aria-label=\"View synchronization status\"",
+        "aria-label=\"Create new report\"",
+        "aria-label=\"Change reporting period\"",
+        "August operating position",
+        "aria-label=\"Revenue performance\"",
+        "aria-label=\"Customer operations\"",
+        "aria-label=\"Pipeline actions\"",
+        "title=\"Acquisition efficiency\"",
+        "aria-label=\"Weekly execution\""
+      ],
+      "forbiddenSourceText": [
+        ".map(",
+        "style={{"
+      ]
+    }
+  ]
+}

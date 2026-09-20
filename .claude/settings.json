@@ -1,0 +1,61 @@
+{
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "allow": [
+      "Bash(npm run check)",
+      "Bash(npm run build)",
+      "Bash(npm run workbench:check-tokens)",
+      "Bash(npm run workbench:check-story-props)",
+      "Bash(npm run workbench:check-config)",
+      "Bash(npm run workbench:check-guidance)",
+      "Bash(npm run workbench:check-design)",
+      "Bash(npm run workbench:check-starter)",
+      "Bash(npm run workbench:check-core)",
+      "Bash(npm run workbench:check-authoring)",
+      "Bash(npm run workbench:check-artifact-fidelity)",
+      "Bash(npm run workbench:check-portability)",
+      "Bash(npm run workbench:check-hosted-core-api)",
+      "Bash(npm run workbench:check-project-guidance-sync)",
+      "Bash(npm run test:editable-tree)",
+      "Bash(npm run test:project-session)",
+      "Bash(npm run test:gestures)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git ls-files:*)",
+      "Bash(rg:*)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(npm run deploy:vercel)",
+      "Bash(npm run figma:publish)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PROJECT_DIR}/.claude/hooks/guard-workbench-registry-edits.mjs"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PROJECT_DIR}/.claude/hooks/guard-workbench-registry-edits.mjs"
+          },
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PROJECT_DIR}/.claude/hooks/guard-workbench-session-artifacts.mjs"
+          }
+        ]
+      }
+    ]
+  }
+}

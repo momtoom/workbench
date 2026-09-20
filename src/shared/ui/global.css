@@ -1,0 +1,337 @@
+/*
+  Shared UI primitive tokens.
+  Edit this file when you want to change reusable controls across the app:
+  - button fills
+  - input/select tone
+  - shared radii
+  - shared focus/hover language
+
+  Use src/styles.css for screen-specific token editor styling.
+*/
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  --wb-background: #111214;
+  --wb-foreground: #d7d9de;
+  --wb-border: rgba(255, 255, 255, 0.055);
+  --wb-muted: #1b1c20;
+  --wb-primary: #2c2e33;
+  --wb-secondary: #212227;
+  --wb-positive: #22c55e;
+  --wb-destructive: #ef4444;
+  --wb-informative: #60a5fa;
+  --wb-bg: var(--wb-background);
+  --wb-chrome: #151619;
+  --wb-panel: #17181b;
+  --wb-panel-subtle: #1b1c20;
+  --wb-panel-raised: #202126;
+  --wb-control: rgba(255, 255, 255, 0.045);
+  --wb-control-hover: rgba(255, 255, 255, 0.07);
+  --wb-control-active: rgba(255, 255, 255, 0.1);
+  --wb-control-disabled: rgba(255, 255, 255, 0.025);
+  --wb-hover-overlay: rgba(255, 255, 255, 0.045);
+  --wb-line: var(--wb-border);
+  --wb-line-soft: rgba(255, 255, 255, 0.035);
+  --wb-text: var(--wb-foreground);
+  --wb-text-muted: rgba(215, 217, 222, 0.62);
+  --wb-text-faint: rgba(215, 217, 222, 0.36);
+  --wb-text-disabled: rgba(215, 217, 222, 0.22);
+  --wb-accent: var(--wb-primary);
+  --wb-accent-strong: var(--wb-informative);
+  --wb-danger: var(--wb-destructive);
+  --wb-shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --wb-radius-sm: 5px;
+  --wb-radius-md: 7px;
+  --wb-radius-lg: 9px;
+  --wb-motion-fast: 120ms;
+  --wb-motion-base: 160ms;
+  --wb-motion-slow: 220ms;
+  --wb-motion-ease: cubic-bezier(0.2, 0, 0.2, 1);
+  --wb-motion-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.wb-ui-button,
+.wb-ui-icon-button,
+.wb-ui-text-field,
+.wb-ui-text-area,
+.wb-ui-text-field-frame,
+.wb-ui-select-shell {
+  border-radius: var(--wb-radius-md);
+  color: var(--wb-text);
+  transition:
+    background-color var(--wb-motion-fast) var(--wb-motion-ease),
+    border-color var(--wb-motion-fast) var(--wb-motion-ease),
+    box-shadow var(--wb-motion-fast) var(--wb-motion-ease),
+    color var(--wb-motion-fast) var(--wb-motion-ease),
+    opacity var(--wb-motion-fast) var(--wb-motion-ease),
+    transform var(--wb-motion-fast) var(--wb-motion-ease);
+}
+
+.wb-ui-button,
+.wb-ui-text-field,
+.wb-ui-text-area,
+.wb-ui-text-field-frame,
+.wb-ui-select-shell {
+  background: var(--wb-control);
+}
+
+.wb-ui-button,
+.wb-ui-icon-button {
+  border: 0;
+  transform: translateY(0);
+}
+
+.wb-ui-text-field,
+.wb-ui-text-area,
+.wb-ui-text-field-frame,
+.wb-ui-select-shell {
+  border: 1px solid transparent;
+}
+
+.wb-ui-button {
+  min-height: 28px;
+  padding: 0 10px;
+}
+
+.wb-ui-button--primary {
+  background: var(--wb-control-active);
+  color: var(--wb-foreground);
+}
+
+.wb-ui-button--danger {
+  color: var(--wb-danger);
+}
+
+.wb-ui-button--ghost {
+  color: var(--wb-text);
+}
+
+.wb-ui-icon-button {
+  display: inline-grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  padding: 0;
+  background: transparent;
+  color: var(--wb-text-muted);
+}
+
+.wb-ui-icon-button--danger {
+  color: var(--wb-danger);
+}
+
+.wb-ui-text-field,
+.wb-ui-text-field-frame,
+.wb-ui-select-shell {
+  height: 30px;
+  min-width: 0;
+}
+
+.wb-ui-text-field {
+  padding: 0 8px;
+}
+
+.wb-ui-text-field[type="search"] {
+  appearance: textfield;
+}
+
+.wb-ui-text-field[type="search"]::-webkit-search-cancel-button,
+.wb-ui-text-field[type="search"]::-webkit-search-decoration {
+  appearance: none;
+}
+
+.wb-ui-text-field-frame {
+  display: inline-grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  padding: 0;
+}
+
+.wb-ui-text-field-frame--leading {
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.wb-ui-text-field-frame--trailing {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.wb-ui-text-field-frame--leading.wb-ui-text-field-frame--trailing {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.wb-ui-text-field-frame > .wb-ui-text-field {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  outline: none;
+}
+
+.wb-ui-text-field-frame > .wb-ui-text-field:hover:not(:disabled) {
+  background: transparent;
+}
+
+.wb-ui-text-field-frame > .wb-ui-text-field:focus-visible {
+  box-shadow: none;
+}
+
+.wb-ui-text-field-frame--leading > .wb-ui-text-field {
+  padding-left: 0;
+}
+
+.wb-ui-text-field-frame--trailing > .wb-ui-text-field {
+  padding-right: 0;
+}
+
+.wb-ui-text-field-slot {
+  display: inline-grid;
+  min-width: 28px;
+  height: 100%;
+  place-items: center;
+  color: var(--wb-text-muted);
+}
+
+.wb-ui-search-clear {
+  display: inline-grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 0;
+  border-radius: var(--wb-radius-sm);
+  padding: 0;
+  background: transparent;
+  color: var(--wb-text-muted);
+  cursor: pointer;
+}
+
+.wb-ui-search-clear:hover,
+.wb-ui-search-clear:focus-visible {
+  background: var(--wb-control-hover);
+  color: var(--wb-foreground);
+}
+
+.wb-ui-search-clear:focus-visible {
+  outline: 2px solid var(--wb-accent-strong);
+  outline-offset: -2px;
+}
+
+.wb-ui-text-area {
+  min-width: 0;
+  min-height: 68px;
+  padding: 7px 8px;
+  resize: vertical;
+  line-height: 1.35;
+}
+
+.wb-ui-select-shell {
+  position: relative;
+  display: inline-grid;
+  align-items: center;
+  line-height: 1;
+}
+
+.wb-ui-select {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  appearance: none;
+  border: 0;
+  border-radius: inherit;
+  padding: 0 28px 0 8px;
+  background: transparent;
+  color: inherit;
+  line-height: 1;
+  outline: none;
+}
+
+.wb-ui-select-icon {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  pointer-events: none;
+  color: var(--wb-text-muted);
+  transform: translateY(-50%);
+  transition:
+    color var(--wb-motion-fast) var(--wb-motion-ease),
+    transform var(--wb-motion-fast) var(--wb-motion-ease);
+}
+
+.wb-ui-button:hover:not(:disabled),
+.wb-ui-icon-button:hover:not(:disabled),
+.wb-ui-text-field:hover:not(:disabled),
+.wb-ui-text-field-frame:hover:not(:has(.wb-ui-text-field:disabled)),
+.wb-ui-text-area:hover:not(:disabled),
+.wb-ui-select-shell:hover:not(:has(.wb-ui-select:disabled)) {
+  background: var(--wb-control-hover);
+  color: var(--wb-foreground);
+}
+
+.wb-ui-text-field-frame:hover:not(:has(.wb-ui-text-field:disabled)) .wb-ui-text-field-slot {
+  color: var(--wb-foreground);
+}
+
+.wb-ui-select-shell:hover .wb-ui-select-icon {
+  color: var(--wb-foreground);
+}
+
+.wb-ui-button:active:not(:disabled),
+.wb-ui-icon-button:active:not(:disabled) {
+  transform: translateY(1px) scale(0.99);
+}
+
+.wb-ui-button:disabled,
+.wb-ui-icon-button:disabled,
+.wb-ui-text-field:disabled,
+.wb-ui-text-area:disabled,
+.wb-ui-select:disabled,
+.wb-ui-text-field-frame:has(.wb-ui-text-field:disabled),
+.wb-ui-select-shell:has(.wb-ui-select:disabled) {
+  color: var(--wb-text-disabled);
+  cursor: not-allowed;
+}
+
+.wb-ui-icon-button:disabled {
+  background: transparent;
+}
+
+.wb-ui-button:disabled {
+  background: var(--wb-control-disabled);
+}
+
+.wb-ui-button:disabled svg,
+.wb-ui-icon-button:disabled svg {
+  opacity: 0.55;
+}
+
+.wb-ui-button:focus-visible,
+.wb-ui-icon-button:focus-visible,
+.wb-ui-text-field:focus-visible,
+.wb-ui-text-field-frame:focus-within,
+.wb-ui-text-area:focus-visible,
+.wb-ui-select:focus-visible {
+  outline: 0;
+  box-shadow:
+    inset 0 0 0 1px var(--wb-accent-strong),
+    inset 0 0 0 3px color-mix(in srgb, var(--wb-accent-strong) 16%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wb-ui-button,
+  .wb-ui-icon-button,
+  .wb-ui-text-field,
+  .wb-ui-text-area,
+  .wb-ui-text-field-frame,
+  .wb-ui-select-shell,
+  .wb-ui-select-icon {
+    transition-duration: 1ms;
+  }
+}

@@ -1,0 +1,260 @@
+/*
+ * Theme-local palette and radius projection.
+ *
+ * The Workbench semantic color collection intentionally keeps light/dark as its
+ * global modes. Palette is a component prop, so it is projected locally instead
+ * of multiplying the global collection into palette x appearance modes.
+ *
+ * Each theme keeps its identity hue on primary, pairs it with a soft accent
+ * tint (hover/selection surfaces), and uses a hue-diverse categorical chart
+ * palette anchored on the theme hue. Chart palettes are validated for CVD
+ * separation, lightness band, and 3:1 surface contrast in both modes.
+ */
+[data-workbench-theme-portal-root="true"] > * {
+  pointer-events: auto;
+}
+
+[data-shadcn-theme="neutral"][data-theme="light"] {
+  --wb-theme-primary: #171717;
+  --wb-theme-primary-foreground: #fafafa;
+  --wb-theme-primary-hover: #262626;
+  --wb-theme-ring: #a3a3a3;
+  --wb-theme-accent: #f5f5f5;
+  --wb-theme-accent-foreground: #171717;
+  --wb-theme-chart-1: #2563eb;
+  --wb-theme-chart-2: #ea580c;
+  --wb-theme-chart-3: #0d9488;
+  --wb-theme-chart-4: #d97706;
+  --wb-theme-chart-5: #7c3aed;
+}
+[data-shadcn-theme="neutral"][data-theme="dark"] {
+  --wb-theme-primary: #e5e5e5;
+  --wb-theme-primary-foreground: #171717;
+  --wb-theme-primary-hover: #d4d4d4;
+  --wb-theme-ring: #737373;
+  --wb-theme-accent: #262626;
+  --wb-theme-accent-foreground: #fafafa;
+  --wb-theme-chart-1: #3b82f6;
+  --wb-theme-chart-2: #ea580c;
+  --wb-theme-chart-3: #0d9488;
+  --wb-theme-chart-4: #d97706;
+  --wb-theme-chart-5: #8b5cf6;
+}
+[data-shadcn-theme="slate"][data-theme="light"] {
+  --wb-theme-primary: #0f172a;
+  --wb-theme-primary-foreground: #f8fafc;
+  --wb-theme-primary-hover: #1e293b;
+  --wb-theme-ring: #64748b;
+  --wb-theme-accent: #f1f5f9;
+  --wb-theme-accent-foreground: #0f172a;
+  --wb-theme-chart-1: #0284c7;
+  --wb-theme-chart-2: #ea580c;
+  --wb-theme-chart-3: #059669;
+  --wb-theme-chart-4: #7c3aed;
+  --wb-theme-chart-5: #e11d48;
+}
+[data-shadcn-theme="slate"][data-theme="dark"] {
+  --wb-theme-primary: #cbd5e1;
+  --wb-theme-primary-foreground: #0f172a;
+  --wb-theme-primary-hover: #e2e8f0;
+  --wb-theme-ring: #94a3b8;
+  --wb-theme-accent: #1e293b;
+  --wb-theme-accent-foreground: #f8fafc;
+  --wb-theme-chart-1: #0284c7;
+  --wb-theme-chart-2: #ea580c;
+  --wb-theme-chart-3: #059669;
+  --wb-theme-chart-4: #8b5cf6;
+  --wb-theme-chart-5: #e11d48;
+}
+[data-shadcn-theme="blue"][data-theme="light"] {
+  --wb-theme-primary: #2563eb;
+  --wb-theme-primary-foreground: #eff6ff;
+  --wb-theme-primary-hover: #1d4ed8;
+  --wb-theme-ring: #60a5fa;
+  --wb-theme-accent: #dbeafe;
+  --wb-theme-accent-foreground: #1e3a8a;
+  --wb-theme-chart-1: #2563eb;
+  --wb-theme-chart-2: #ea580c;
+  --wb-theme-chart-3: #0d9488;
+  --wb-theme-chart-4: #e11d48;
+  --wb-theme-chart-5: #d97706;
+}
+[data-shadcn-theme="blue"][data-theme="dark"] {
+  --wb-theme-primary: #60a5fa;
+  --wb-theme-primary-foreground: #172554;
+  --wb-theme-primary-hover: #93c5fd;
+  --wb-theme-ring: #3b82f6;
+  --wb-theme-accent: #1e3a8a;
+  --wb-theme-accent-foreground: #dbeafe;
+  --wb-theme-chart-1: #3b82f6;
+  --wb-theme-chart-2: #ea580c;
+  --wb-theme-chart-3: #0d9488;
+  --wb-theme-chart-4: #e11d48;
+  --wb-theme-chart-5: #d97706;
+}
+[data-shadcn-theme="rose"][data-theme="light"] {
+  --wb-theme-primary: #e11d48;
+  --wb-theme-primary-foreground: #fff1f2;
+  --wb-theme-primary-hover: #be123c;
+  --wb-theme-ring: #fb7185;
+  --wb-theme-accent: #ffe4e6;
+  --wb-theme-accent-foreground: #881337;
+  --wb-theme-chart-1: #e11d48;
+  --wb-theme-chart-2: #0d9488;
+  --wb-theme-chart-3: #d97706;
+  --wb-theme-chart-4: #4f46e5;
+  --wb-theme-chart-5: #059669;
+}
+[data-shadcn-theme="rose"][data-theme="dark"] {
+  --wb-theme-primary: #fb7185;
+  --wb-theme-primary-foreground: #4c0519;
+  --wb-theme-primary-hover: #fda4af;
+  --wb-theme-ring: #f43f5e;
+  --wb-theme-accent: #881337;
+  --wb-theme-accent-foreground: #ffe4e6;
+  --wb-theme-chart-1: #f43f5e;
+  --wb-theme-chart-2: #0d9488;
+  --wb-theme-chart-3: #d97706;
+  --wb-theme-chart-4: #6366f1;
+  --wb-theme-chart-5: #059669;
+}
+[data-shadcn-theme="indigo"][data-theme="light"] {
+  --wb-theme-primary: #4f46e5;
+  --wb-theme-primary-foreground: #eef2ff;
+  --wb-theme-primary-hover: #4338ca;
+  --wb-theme-ring: #818cf8;
+  --wb-theme-accent: #e0e7ff;
+  --wb-theme-accent-foreground: #312e81;
+  --wb-theme-chart-1: #4f46e5;
+  --wb-theme-chart-2: #ea580c;
+  --wb-theme-chart-3: #0d9488;
+  --wb-theme-chart-4: #d97706;
+  --wb-theme-chart-5: #e11d48;
+}
+[data-shadcn-theme="indigo"][data-theme="dark"] {
+  --wb-theme-primary: #818cf8;
+  --wb-theme-primary-foreground: #1e1b4b;
+  --wb-theme-primary-hover: #a5b4fc;
+  --wb-theme-ring: #6366f1;
+  --wb-theme-accent: #312e81;
+  --wb-theme-accent-foreground: #e0e7ff;
+  --wb-theme-chart-1: #6366f1;
+  --wb-theme-chart-2: #ea580c;
+  --wb-theme-chart-3: #0d9488;
+  --wb-theme-chart-4: #d97706;
+  --wb-theme-chart-5: #e11d48;
+}
+[data-shadcn-theme="amber"][data-theme="light"] {
+  --wb-theme-primary: #d97706;
+  --wb-theme-primary-foreground: #fffbeb;
+  --wb-theme-primary-hover: #b45309;
+  --wb-theme-ring: #f59e0b;
+  --wb-theme-accent: #fef3c7;
+  --wb-theme-accent-foreground: #78350f;
+  --wb-theme-chart-1: #d97706;
+  --wb-theme-chart-2: #4f46e5;
+  --wb-theme-chart-3: #e11d48;
+  --wb-theme-chart-4: #0d9488;
+  --wb-theme-chart-5: #7c3aed;
+}
+[data-shadcn-theme="amber"][data-theme="dark"] {
+  --wb-theme-primary: #fbbf24;
+  --wb-theme-primary-foreground: #451a03;
+  --wb-theme-primary-hover: #fcd34d;
+  --wb-theme-ring: #f59e0b;
+  --wb-theme-accent: #78350f;
+  --wb-theme-accent-foreground: #fef3c7;
+  --wb-theme-chart-1: #d97706;
+  --wb-theme-chart-2: #6366f1;
+  --wb-theme-chart-3: #e11d48;
+  --wb-theme-chart-4: #0d9488;
+  --wb-theme-chart-5: #8b5cf6;
+}
+[data-shadcn-theme="violet"][data-theme="light"] {
+  --wb-theme-primary: #7c3aed;
+  --wb-theme-primary-foreground: #f5f3ff;
+  --wb-theme-primary-hover: #6d28d9;
+  --wb-theme-ring: #a78bfa;
+  --wb-theme-accent: #ede9fe;
+  --wb-theme-accent-foreground: #4c1d95;
+  --wb-theme-chart-1: #7c3aed;
+  --wb-theme-chart-2: #d97706;
+  --wb-theme-chart-3: #0d9488;
+  --wb-theme-chart-4: #e11d48;
+  --wb-theme-chart-5: #0284c7;
+}
+[data-shadcn-theme="violet"][data-theme="dark"] {
+  --wb-theme-primary: #a78bfa;
+  --wb-theme-primary-foreground: #2e1065;
+  --wb-theme-primary-hover: #c4b5fd;
+  --wb-theme-ring: #8b5cf6;
+  --wb-theme-accent: #4c1d95;
+  --wb-theme-accent-foreground: #ede9fe;
+  --wb-theme-chart-1: #8b5cf6;
+  --wb-theme-chart-2: #d97706;
+  --wb-theme-chart-3: #0d9488;
+  --wb-theme-chart-4: #e11d48;
+  --wb-theme-chart-5: #0284c7;
+}
+
+[data-shadcn-theme] {
+  --primary: var(--wb-theme-primary);
+  --primary-foreground: var(--wb-theme-primary-foreground);
+  --accent: var(--wb-theme-accent);
+  --accent-foreground: var(--wb-theme-accent-foreground);
+  --ring: var(--wb-theme-ring);
+  --chart-1: var(--wb-theme-chart-1);
+  --chart-2: var(--wb-theme-chart-2);
+  --chart-3: var(--wb-theme-chart-3);
+  --chart-4: var(--wb-theme-chart-4);
+  --chart-5: var(--wb-theme-chart-5);
+  --sidebar-primary: var(--wb-theme-primary);
+  --sidebar-primary-foreground: var(--wb-theme-primary-foreground);
+  --sidebar-accent: var(--wb-theme-accent);
+  --sidebar-accent-foreground: var(--wb-theme-accent-foreground);
+  --sidebar-ring: var(--wb-theme-ring);
+  --ds-token-workbench-semantic-color-primary: var(--wb-theme-primary);
+  --ds-token-workbench-semantic-color-primary-foreground: var(--wb-theme-primary-foreground);
+  --ds-token-workbench-semantic-color-action-primary: var(--wb-theme-primary);
+  --ds-token-workbench-semantic-color-action-primary-hover: var(--wb-theme-primary-hover);
+  --ds-token-workbench-semantic-color-action-primary-text: var(--wb-theme-primary-foreground);
+  --ds-token-workbench-semantic-color-accent: var(--wb-theme-accent);
+  --ds-token-workbench-semantic-color-accent-foreground: var(--wb-theme-accent-foreground);
+  --ds-token-workbench-semantic-color-focus-ring: var(--wb-theme-ring);
+  --ds-token-workbench-semantic-color-ring: var(--wb-theme-ring);
+  --ds-token-workbench-semantic-color-chart-1: var(--wb-theme-chart-1);
+  --ds-token-workbench-semantic-color-chart-2: var(--wb-theme-chart-2);
+  --ds-token-workbench-semantic-color-chart-3: var(--wb-theme-chart-3);
+  --ds-token-workbench-semantic-color-chart-4: var(--wb-theme-chart-4);
+  --ds-token-workbench-semantic-color-chart-5: var(--wb-theme-chart-5);
+  --ds-token-workbench-semantic-color-sidebar-primary: var(--wb-theme-primary);
+  --ds-token-workbench-semantic-color-sidebar-primary-foreground: var(--wb-theme-primary-foreground);
+  --ds-token-workbench-semantic-color-sidebar-accent: var(--wb-theme-accent);
+  --ds-token-workbench-semantic-color-sidebar-accent-foreground: var(--wb-theme-accent-foreground);
+  --ds-token-workbench-semantic-color-sidebar-ring: var(--wb-theme-ring);
+}
+
+[data-shadcn-radius="base"] {
+  --radius: 0.625rem;
+  --ds-token-workbench-semantic-radius-radius: 0.625rem;
+  --ds-token-workbench-semantic-radius-control-sm: 0.5rem;
+  --ds-token-workbench-semantic-radius-control-xs: 0.375rem;
+  --ds-token-workbench-semantic-radius-surface-md: 0.625rem;
+  --ds-token-workbench-semantic-radius-surface-lg: 0.75rem;
+}
+[data-shadcn-radius="compact"] {
+  --radius: 0.375rem;
+  --ds-token-workbench-semantic-radius-radius: 0.375rem;
+  --ds-token-workbench-semantic-radius-control-sm: 0.25rem;
+  --ds-token-workbench-semantic-radius-control-xs: 0.125rem;
+  --ds-token-workbench-semantic-radius-surface-md: 0.375rem;
+  --ds-token-workbench-semantic-radius-surface-lg: 0.5rem;
+}
+[data-shadcn-radius="flat"] {
+  --radius: 0;
+  --ds-token-workbench-semantic-radius-radius: 0;
+  --ds-token-workbench-semantic-radius-control-sm: 0;
+  --ds-token-workbench-semantic-radius-control-xs: 0;
+  --ds-token-workbench-semantic-radius-surface-md: 0;
+  --ds-token-workbench-semantic-radius-surface-lg: 0;
+}

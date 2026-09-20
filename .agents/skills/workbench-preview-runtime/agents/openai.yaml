@@ -1,0 +1,3 @@
+interface:
+  display_name: "Workbench Preview Runtime"
+  short_description: "Debug Workbench previews"

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "0.1",
+  "cachePath": ".workbench/.npm-cache",
+  "command": "npm install --no-audit --no-fund --cache .workbench/.npm-cache",
+  "manager": "npm",
+  "startedAt": "2026-07-27T09:51:14.422Z",
+  "templateId": "standard",
+  "finishedAt": "2026-07-27T09:51:14.423Z",
+  "message": "Skipped because WORKBENCH_SKIP_PROJECT_INSTALL=1.",
+  "ok": true,
+  "status": "skipped"
+}

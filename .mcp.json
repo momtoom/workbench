@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "workbench": {
+      "command": "node",
+      "args": ["scripts/workbench-authoring-mcp.mjs"]
+    }
+  }
+}

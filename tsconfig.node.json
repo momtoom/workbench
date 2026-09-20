@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": ".",
+    "outDir": "node_modules/.cache/workbench-tsconfig-node",
+    "target": "ES2020",
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "vite.config.ts",
+    "host/local-preview/server.ts",
+    "host/local-bridge/server.ts",
+    "host/local-bridge/previewCssFreshness.ts",
+    "scripts/workbench-local-project-host.d.mts"
+  ]
+}

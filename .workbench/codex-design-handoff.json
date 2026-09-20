@@ -1,0 +1,568 @@
+{
+  "kind": "workbench-codex-design-handoff",
+  "schemaVersion": "0.1",
+  "createdAt": "2026-05-12T10:59:33.260Z",
+  "componentId": "page-untitled-page-2",
+  "componentName": "Untitled page 2",
+  "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+  "story": null,
+  "selectedNodeId": null,
+  "tree": {
+    "id": "source:src-workbench-pages-UntitledPage2-tsx",
+    "label": "Untitled page 2",
+    "root": {
+      "id": "source:src-workbench-pages-UntitledPage2-tsx:root",
+      "label": "main",
+      "kind": "frame",
+      "jsxName": "main",
+      "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+      "sourceStyleDeclarations": {
+        "background": "var(--wb-color-background)",
+        "display": "flex",
+        "justify-content": "flex-start",
+        "align-items": "center",
+        "flex-direction": "column",
+        "padding": "var(--wb-spacing-4)",
+        "gap": "var(--wb-spacing-6)"
+      },
+      "children": [
+        {
+          "id": "source:src-workbench-pages-UntitledPage2-tsx:0",
+          "label": "section",
+          "kind": "frame",
+          "jsxName": "section",
+          "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+          "sourceAttributes": {
+            "aria-label": "Untitled page 2"
+          },
+          "sourceStyleDeclarations": {
+            "width": "100%",
+            "height": "100%",
+            "display": "flex",
+            "flex-direction": "column",
+            "max-width": "1280px",
+            "align-items": "flex-start",
+            "justify-content": "flex-start"
+          },
+          "children": [
+            {
+              "id": "source:src-workbench-pages-UntitledPage2-tsx:0-0",
+              "label": "SgdsCardGrid",
+              "kind": "component-instance",
+              "jsxName": "SgdsCardGrid",
+              "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+              "sourceAttributes": {
+                "aria-label": "Untitled page 2"
+              },
+              "sourceProps": {
+                "aria-label": "Untitled page 2",
+                "arrows": true,
+                "cols": "4",
+                "count": "12",
+                "gap": "sm",
+                "itemAspectRatio": "2 / 3",
+                "layout": "row",
+                "scroll": "smooth"
+              },
+              "sourceStyleDeclarations": {
+                "height": "fit-content",
+                "width": "100%",
+                "overflow": "visible"
+              },
+              "children": [
+                {
+                  "id": "source:src-workbench-pages-UntitledPage2-tsx:0-0-0",
+                  "label": "SgdsStack",
+                  "kind": "component-instance",
+                  "jsxName": "SgdsStack",
+                  "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                  "sourceProps": {
+                    "align": "stretch",
+                    "background": "none",
+                    "direction": "column",
+                    "gap": "md",
+                    "justify": "start",
+                    "mask": "none",
+                    "maskAngle": "0",
+                    "maskCurve": "linear",
+                    "maskEnd": "100",
+                    "maskStart": "50",
+                    "padding": "none"
+                  },
+                  "sourceStyleDeclarations": {
+                    "width": "100%",
+                    "height": "100%",
+                    "border-radius": "62.4375rem",
+                    "overflow": "hidden",
+                    "position": "relative"
+                  },
+                  "children": [
+                    {
+                      "id": "source:src-workbench-pages-UntitledPage2-tsx:0-0-0-0",
+                      "label": "SgdsMedia",
+                      "kind": "component-instance",
+                      "jsxName": "SgdsMedia",
+                      "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                      "sourceAttributes": {
+                        "src": "https://images.unsplash.com/photo-1773751392380-94b3eddea80b?q=80&w=1311&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "alt": "SGDS media preview"
+                      },
+                      "sourceProps": {
+                        "src": "https://images.unsplash.com/photo-1773751392380-94b3eddea80b?q=80&w=1311&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "alt": "SGDS media preview",
+                        "aspectRatio": "16 / 9",
+                        "fit": "cover",
+                        "rounded": "none"
+                      },
+                      "sourceStyleDeclarations": {
+                        "position": "absolute",
+                        "width": "100%",
+                        "height": "100%"
+                      }
+                    },
+                    {
+                      "id": "source:src-workbench-pages-UntitledPage2-tsx:0-0-0-1",
+                      "label": "SgdsStack",
+                      "kind": "component-instance",
+                      "jsxName": "SgdsStack",
+                      "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                      "sourceProps": {
+                        "maskEnd": "70",
+                        "maskStart": "20",
+                        "glassBlur": "18",
+                        "maskAngle": "0",
+                        "maskCurve": "ease-out",
+                        "align": "stretch",
+                        "background": "cyan",
+                        "direction": "column",
+                        "gap": "md",
+                        "justify": "start",
+                        "mask": "fade",
+                        "padding": "xl"
+                      },
+                      "sourceStyleDeclarations": {
+                        "width": "100%",
+                        "height": "100%",
+                        "overflow": "hidden",
+                        "display": "flex",
+                        "align-items": "center",
+                        "justify-content": "flex-end",
+                        "gap": "var(--wb-spacing-2)"
+                      },
+                      "children": [
+                        {
+                          "id": "source:src-workbench-pages-UntitledPage2-tsx:0-0-0-1-0",
+                          "label": "div",
+                          "kind": "frame",
+                          "jsxName": "div",
+                          "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                          "sourceStyleDeclarations": {
+                            "display": "flex",
+                            "flex-direction": "column",
+                            "align-items": "center",
+                            "justify-content": "flex-start",
+                            "gap": "var(--wb-spacing-2)",
+                            "height": "40%"
+                          },
+                          "children": [
+                            {
+                              "id": "source:src-workbench-pages-UntitledPage2-tsx:0-0-0-1-0-0",
+                              "label": "SgdsHeading",
+                              "kind": "component-instance",
+                              "jsxName": "SgdsHeading",
+                              "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                              "sourceProps": {
+                                "level": "4",
+                                "children": "Old Garden Trees"
+                              },
+                              "sourceStyleDeclarations": {
+                                "text-align": "center",
+                                "white-space": "pre-wrap",
+                                "text-overflow": "clip"
+                              },
+                              "children": [
+                                {
+                                  "id": "source:src-workbench-pages-UntitledPage2-tsx:0-0-0-1-0-0-0-text",
+                                  "label": "Old Garden Trees",
+                                  "kind": "text",
+                                  "textContent": "Old Garden Trees",
+                                  "jsxName": "text",
+                                  "sourceFile": "src/workbench-pages/UntitledPage2.tsx"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "source:src-workbench-pages-UntitledPage2-tsx:0-0-0-1-0-1",
+                              "label": "SgdsEyebrow",
+                              "kind": "component-instance",
+                              "jsxName": "SgdsEyebrow",
+                              "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                              "sourceProps": {
+                                "children": "Featured"
+                              },
+                              "children": [
+                                {
+                                  "id": "source:src-workbench-pages-UntitledPage2-tsx:0-0-0-1-0-1-0-text",
+                                  "label": "Featured",
+                                  "kind": "text",
+                                  "textContent": "Featured",
+                                  "jsxName": "text",
+                                  "sourceFile": "src/workbench-pages/UntitledPage2.tsx"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "source:src-workbench-pages-UntitledPage2-tsx:1",
+          "label": "SgdsCard",
+          "kind": "component-instance",
+          "jsxName": "SgdsCard",
+          "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+          "sourceProps": {
+            "shadow": false,
+            "direction": "column",
+            "gap": "md",
+            "padded": false,
+            "variant": "default"
+          },
+          "sourceStyleDeclarations": {
+            "width": "100%",
+            "height": "60rem",
+            "border-radius": "var(--wb-borderRadius-pill)",
+            "overflow": "hidden",
+            "isolation": "isolate",
+            "position": "relative",
+            "max-width": "var(--wb-spacing-wide)"
+          },
+          "children": [
+            {
+              "id": "source:src-workbench-pages-UntitledPage2-tsx:1-0",
+              "label": "SgdsMedia",
+              "kind": "component-instance",
+              "jsxName": "SgdsMedia",
+              "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+              "sourceAttributes": {
+                "src": "https://i.pinimg.com/736x/4d/82/26/4d8226d0d50327880a77781a918bdf12.jpg",
+                "alt": "SGDS media preview"
+              },
+              "sourceProps": {
+                "src": "https://i.pinimg.com/736x/4d/82/26/4d8226d0d50327880a77781a918bdf12.jpg",
+                "alt": "SGDS media preview",
+                "aspectRatio": "21 / 9",
+                "fit": "cover",
+                "overlayGlassBlur": "10",
+                "overlayMask": "none",
+                "overlayMaskAngle": "100",
+                "overlayMaskCurve": "ease-out",
+                "overlayMaskEnd": "55",
+                "overlayMaskStart": "27",
+                "rounded": "md"
+              },
+              "sourceStyleDeclarations": {
+                "width": "100%",
+                "height": "100%"
+              }
+            },
+            {
+              "id": "source:src-workbench-pages-UntitledPage2-tsx:1-1",
+              "label": "SgdsStack",
+              "kind": "component-instance",
+              "jsxName": "SgdsStack",
+              "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+              "sourceProps": {
+                "maskCurve": "ease-out",
+                "maskAngle": "90",
+                "align": "stretch",
+                "background": "accent",
+                "direction": "column",
+                "gap": "md",
+                "glassBlur": "39",
+                "justify": "start",
+                "mask": "fade",
+                "padding": "lg"
+              },
+              "sourceStyleDeclarations": {
+                "position": "absolute",
+                "width": "50%",
+                "height": "100%",
+                "display": "flex",
+                "align-items": "center",
+                "justify-content": "center"
+              },
+              "children": [
+                {
+                  "id": "source:src-workbench-pages-UntitledPage2-tsx:1-1-0",
+                  "label": "SgdsDisplay",
+                  "kind": "component-instance",
+                  "jsxName": "SgdsDisplay",
+                  "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                  "sourceProps": {
+                    "as": "h1",
+                    "tone": "difference",
+                    "children": "오래된 정원"
+                  },
+                  "children": [
+                    {
+                      "id": "source:src-workbench-pages-UntitledPage2-tsx:1-1-0-0-text",
+                      "label": "오래된 정원",
+                      "kind": "text",
+                      "textContent": "오래된 정원",
+                      "jsxName": "text",
+                      "sourceFile": "src/workbench-pages/UntitledPage2.tsx"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "source:src-workbench-pages-UntitledPage2-tsx:2",
+          "label": "section",
+          "kind": "frame",
+          "jsxName": "section",
+          "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+          "sourceStyleDeclarations": {
+            "width": "100%",
+            "height": "fit-content",
+            "max-width": "var(--wb-spacing-wide)"
+          },
+          "children": [
+            {
+              "id": "source:src-workbench-pages-UntitledPage2-tsx:2-0",
+              "label": "h3",
+              "kind": "text",
+              "jsxName": "h3",
+              "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+              "sourceStyleDeclarations": {
+                "display": "inline",
+                "width": "100%",
+                "text-align": "center",
+                "height": "fit-content"
+              },
+              "children": [
+                {
+                  "id": "source:src-workbench-pages-UntitledPage2-tsx:2-0-0",
+                  "label": "span",
+                  "kind": "text",
+                  "jsxName": "span",
+                  "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                  "children": [
+                    {
+                      "id": "source:src-workbench-pages-UntitledPage2-tsx:2-0-0-0-text",
+                      "label": "텍스트",
+                      "kind": "text",
+                      "textContent": "텍스트",
+                      "jsxName": "text",
+                      "sourceFile": "src/workbench-pages/UntitledPage2.tsx"
+                    }
+                  ]
+                },
+                {
+                  "id": "source:src-workbench-pages-UntitledPage2-tsx:2-0-1",
+                  "label": "span",
+                  "kind": "text",
+                  "jsxName": "span",
+                  "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                  "sourceStyleDeclarations": {
+                    "color": "var(--wb-color-earth-clay)"
+                  },
+                  "children": [
+                    {
+                      "id": "source:src-workbench-pages-UntitledPage2-tsx:2-0-1-0-text",
+                      "label": "i18n.test",
+                      "kind": "text",
+                      "textContent": "i18n.test",
+                      "jsxName": "text",
+                      "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                      "tokenBindings": {
+                        "text": "i18n.test"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "source:src-workbench-pages-UntitledPage2-tsx:2-1",
+              "label": "SgdsCardGrid",
+              "kind": "component-instance",
+              "jsxName": "SgdsCardGrid",
+              "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+              "sourceProps": {
+                "itemSize": "lg",
+                "shadow": false,
+                "arrows": true,
+                "cols": "3",
+                "count": "12",
+                "gap": "sm",
+                "itemAspectRatio": "2 / 3",
+                "layout": "row",
+                "scroll": "smooth"
+              },
+              "sourceStyleDeclarations": {
+                "width": "100%",
+                "height": "fit-content"
+              },
+              "children": [
+                {
+                  "id": "source:src-workbench-pages-UntitledPage2-tsx:2-1-0",
+                  "label": "SgdsCard",
+                  "kind": "component-instance",
+                  "jsxName": "SgdsCard",
+                  "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                  "sourceProps": {
+                    "shadow": false,
+                    "direction": "column",
+                    "gap": "sm",
+                    "padded": false,
+                    "variant": "default"
+                  },
+                  "sourceStyleDeclarations": {
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "border-radius": "var(--wb-borderRadius-pill)",
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "justify-content": "flex-end",
+                    "width": "100%",
+                    "height": "100%"
+                  },
+                  "children": [
+                    {
+                      "id": "source:src-workbench-pages-UntitledPage2-tsx:2-1-0-0",
+                      "label": "SgdsMedia",
+                      "kind": "component-instance",
+                      "jsxName": "SgdsMedia",
+                      "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                      "sourceAttributes": {
+                        "src": "https://i.pinimg.com/736x/4d/82/26/4d8226d0d50327880a77781a918bdf12.jpg",
+                        "alt": "SGDS media preview"
+                      },
+                      "sourceProps": {
+                        "overlay": "glass-light",
+                        "src": "https://i.pinimg.com/736x/4d/82/26/4d8226d0d50327880a77781a918bdf12.jpg",
+                        "alt": "SGDS media preview",
+                        "aspectRatio": "16 / 9",
+                        "fit": "cover",
+                        "overlayGlassBlur": "25",
+                        "overlayMask": "fade",
+                        "overlayMaskAngle": "0",
+                        "overlayMaskCurve": "ease-out",
+                        "overlayMaskEnd": "56",
+                        "overlayMaskStart": "14",
+                        "rounded": "none"
+                      },
+                      "sourceStyleDeclarations": {
+                        "width": "100%",
+                        "height": "100%",
+                        "position": "absolute"
+                      }
+                    },
+                    {
+                      "id": "source:src-workbench-pages-UntitledPage2-tsx:2-1-0-1",
+                      "label": "SgdsStack",
+                      "kind": "component-instance",
+                      "jsxName": "SgdsStack",
+                      "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                      "sourceProps": {
+                        "align": "stretch",
+                        "background": "none",
+                        "direction": "column",
+                        "gap": "md",
+                        "glassBlur": "10",
+                        "justify": "start",
+                        "mask": "none",
+                        "maskAngle": "0",
+                        "maskCurve": "linear",
+                        "maskEnd": "100",
+                        "maskStart": "50",
+                        "padding": "none"
+                      },
+                      "sourceStyleDeclarations": {
+                        "width": "100%",
+                        "height": "40%",
+                        "display": "flex",
+                        "align-items": "center",
+                        "justify-content": "flex-start",
+                        "gap": "var(--wb-spacing-2)",
+                        "padding": "var(--wb-spacing-5)",
+                        "text-align": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "source:src-workbench-pages-UntitledPage2-tsx:2-1-0-1-0",
+                          "label": "SgdsBadge",
+                          "kind": "component-instance",
+                          "jsxName": "SgdsBadge",
+                          "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                          "sourceProps": {
+                            "variant": "accent",
+                            "children": "추천작가 신작"
+                          },
+                          "children": [
+                            {
+                              "id": "source:src-workbench-pages-UntitledPage2-tsx:2-1-0-1-0-0-text",
+                              "label": "추천작가 신작",
+                              "kind": "text",
+                              "textContent": "추천작가 신작",
+                              "jsxName": "text",
+                              "sourceFile": "src/workbench-pages/UntitledPage2.tsx"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "source:src-workbench-pages-UntitledPage2-tsx:2-1-0-1-1",
+                          "label": "SgdsHeading",
+                          "kind": "component-instance",
+                          "jsxName": "SgdsHeading",
+                          "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+                          "sourceProps": {
+                            "tone": "difference",
+                            "level": "3",
+                            "children": "오래된 정원"
+                          },
+                          "sourceStyleDeclarations": {
+                            "height": "fit-content",
+                            "line-height": "var(--wb-lineHeight-snug)",
+                            "white-space": "nowrap",
+                            "text-overflow": "ellipsis",
+                            "width": "100%"
+                          },
+                          "children": [
+                            {
+                              "id": "source:src-workbench-pages-UntitledPage2-tsx:2-1-0-1-1-0-text",
+                              "label": "오래된 정원",
+                              "kind": "text",
+                              "textContent": "오래된 정원",
+                              "jsxName": "text",
+                              "sourceFile": "src/workbench-pages/UntitledPage2.tsx"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "notes": [
+    "This file is a source-aware design snapshot for Codex Desktop.",
+    "Apply visual intent to the real TSX/CSS implementation; do not treat this JSON as runtime source.",
+    "Prefer Workbench token variables and data-wb token bindings when translating styles back to code."
+  ]
+}

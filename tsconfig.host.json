@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    "composite": false,
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist-host",
+    "rootDir": "host",
+    "noEmit": false,
+    "strict": true,
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "include": ["host/**/*.ts", "host/**/*.cts", "scripts/workbench-template.d.ts"]
+}

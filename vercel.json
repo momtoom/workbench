@@ -1,0 +1,30 @@
+{
+  "buildCommand": "npm run build",
+  "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
+      ]
+    }
+  ],
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/((?!api/|assets/|workbench-assets/|page-preview\\.html|workbench-source-preview\\.html).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

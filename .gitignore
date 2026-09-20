@@ -1,0 +1,64 @@
+node_modules
+dist
+dist-host
+dist-electron
+.DS_Store
+*.log
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+.workbench/workspace-state.json
+.workbench/history.json
+.workbench/dev-server-project.json
+**/.workbench/selection.json
+**/.workbench/workspace-state.json
+**/.workbench/history.json
+# Save points are whole source copies kept per lane. Same category as the
+# session state above, and far larger -- a big page reaches megabytes.
+# Projects need their own rule further down, after the `!projects/*/**` re-include.
+.workbench/save-points/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+.envrc
+.npmrc
+.yarnrc
+.pnpmrc
+*.pem
+*.key
+*.p12
+*.p8
+*.jks
+*.keystore
+*.mobileprovision
+GoogleService-Info.plist
+google-services.json
+.aws/
+.gcloud/
+
+artifacts/
+THIRD_PARTY_CHROMIUM_NOTICES.html
+release-*/
+release/mac-arm64.tmp/
+projects/*
+!projects/*/
+!projects/*/**
+projects/*/.workbench/guidance-backups/
+# Must sit after the `!projects/*/**` re-include above, or that rule wins.
+# `**` rather than `*` so nested projects (projects/A/B/.workbench/...) match.
+projects/**/.workbench/history.json
+projects/**/.workbench/selection.json
+projects/**/.workbench/workspace-state.json
+projects/**/.workbench/dev-server-project.json
+projects/**/.workbench/*handoff*.json
+projects/**/.workbench/save-points/
+projects/**/.workbench/.npm-cache/
+projects/*/dist/
+projects/**/node_modules/
+projects/**/.DS_Store
+.playwright-cli/
+output/playwright/
+.vercel

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Workbench Token Editor"
+  short_description: "Guard Workbench token edits"

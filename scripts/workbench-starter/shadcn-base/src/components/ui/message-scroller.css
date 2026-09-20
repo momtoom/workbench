@@ -1,0 +1,115 @@
+@keyframes wb-message-scroller-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes wb-message-scroller-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(0.625rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wb-message-scroller-slide-side {
+  from {
+    opacity: 0;
+    transform: translateX(var(--wb-message-scroller-slide-side-distance, 1.125rem));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes wb-message-scroller-pop {
+  from {
+    opacity: 0;
+    transform: translateY(0.375rem) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes wb-message-scroller-spring-bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(0.75rem) scale(0.96);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-0.125rem) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes wb-message-scroller-blur-fade {
+  from {
+    opacity: 0;
+    filter: blur(0.25rem);
+    transform: translateY(0.375rem);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes wb-message-scroller-scale-fade {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+:where([data-slot="message-scroller-item"][data-animation="fade"]) {
+  animation: wb-message-scroller-fade 260ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+:where([data-slot="message-scroller-item"][data-animation="slide-up"]) {
+  animation: wb-message-scroller-slide-up 260ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+:where([data-slot="message-scroller-item"][data-animation="slide-side"]) {
+  animation: wb-message-scroller-slide-side 300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+:where([dir="rtl"] [data-slot="message-scroller-item"][data-animation="slide-side"]) {
+  --wb-message-scroller-slide-side-distance: -1.125rem;
+}
+
+:where([data-slot="message-scroller-item"][data-animation="pop"]) {
+  animation: wb-message-scroller-pop 280ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+:where([data-slot="message-scroller-item"][data-animation="spring-bounce"]) {
+  animation: wb-message-scroller-spring-bounce 500ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+:where([data-slot="message-scroller-item"][data-animation="blur-fade"]) {
+  animation: wb-message-scroller-blur-fade 300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+:where([data-slot="message-scroller-item"][data-animation="scale-fade"]) {
+  animation: wb-message-scroller-scale-fade 240ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where([data-slot="message-scroller-item"][data-animation]) {
+    animation: none;
+  }
+}
+

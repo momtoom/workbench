@@ -1,0 +1,7 @@
+interface:
+  display_name: "Workbench Design Authoring"
+  short_description: "Create distinctive, editable Workbench experiences."
+  default_prompt: "Use $workbench-design-authoring to turn this product or service brief into a distinctive, editable Workbench design."
+
+policy:
+  allow_implicit_invocation: true

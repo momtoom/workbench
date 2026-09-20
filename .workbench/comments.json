@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "0.1",
+  "comments": [
+    {
+      "id": "note-mpbixslv-4qnpl1",
+      "body": "",
+      "createdAt": "2026-05-18T18:15:06.259Z",
+      "status": "open",
+      "target": {
+        "kind": "node",
+        "nodeId": "source:src-workbench-pages-UntitledPage2-tsx:root",
+        "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+        "extensions": {
+          "label": "main",
+          "jsxName": "main",
+          "highlightBoxes": [
+            {
+              "unit": "px",
+              "x": 12.5,
+              "y": 12.5,
+              "width": 52.5,
+              "height": 57,
+              "anchorX": "start",
+              "anchorY": "start",
+              "targetWidth": 1381,
+              "targetHeight": 898,
+              "bodyHtml": "",
+              "id": "note-box-mpbtf7kx-1b48xb",
+              "label": "Highlight 1",
+              "createdAt": "2026-05-18T23:08:34.977Z",
+              "updatedAt": "2026-05-18T23:08:34.977Z"
+            }
+          ]
+        }
+      },
+      "updatedAt": "2026-05-18T23:08:34.978Z",
+      "extensions": {
+        "folderId": null,
+        "targetStatus": "linked",
+        "title": "로고",
+        "type": "behavior"
+      }
+    }
+  ],
+  "extensions": {
+    "specNoteFolders": []
+  }
+}

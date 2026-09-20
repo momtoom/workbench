@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1",
+  "projectId": "wb_workbench-v1",
+  "projectName": "workbench-v1",
+  "createdAt": "2026-04-26T17:03:18.948Z",
+  "updatedAt": "2026-04-26T17:03:18.948Z",
+  "workbench": {
+    "app": "workbench-v1",
+    "installMode": "local-project",
+    "devCommand": "npm run dev"
+  },
+  "paths": {
+    "assets": ".workbench/assets.json",
+    "tokens": ".workbench/tokens.json",
+    "pages": ".workbench/pages.json",
+    "components": ".workbench/components.json",
+    "comments": ".workbench/comments.json",
+    "selection": ".workbench/selection.json",
+    "workspaceState": ".workbench/workspace-state.json",
+    "history": ".workbench/history.json"
+  },
+  "capabilities": {
+    "localFiles": true,
+    "codexDesktopPreview": true,
+    "optionalCloudSync": false
+  },
+  "extensions": {}
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "0.1",
+  "pages": [
+    {
+      "id": "page-home",
+      "name": "Colors",
+      "route": "/",
+      "sourceFile": "src/workbench-samples/WorkbenchSamplePage.tsx",
+      "rootNodeId": "source:src-workbench-samples-WorkbenchSamplePage-tsx:root",
+      "status": "draft",
+      "extensions": {}
+    },
+    {
+      "id": "page-untitled-page",
+      "name": "Input design",
+      "route": "/untitled-page",
+      "sourceFile": "src/workbench-pages/UntitledPage.tsx",
+      "rootNodeId": "source:untitled-page:root",
+      "status": "draft",
+      "extensions": {}
+    },
+    {
+      "id": "page-untitled-page-2",
+      "name": "Untitled page 2",
+      "route": "/untitled-page-2",
+      "sourceFile": "src/workbench-pages/UntitledPage2.tsx",
+      "rootNodeId": "source:untitled-page-2:root",
+      "status": "draft",
+      "extensions": {}
+    }
+  ],
+  "extensions": {}
+}
